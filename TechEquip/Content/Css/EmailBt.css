@@ -1,0 +1,167 @@
+﻿/*кнопка обратной связи*/
+
+.email-bt {
+    background: #38a3fd;
+    border: 2px solid #38a3fd;
+    border-radius: 50%;
+    box-shadow: 0 8px 10px rgba(56,163,253,0.3);
+    cursor: pointer;
+    height: 68px;
+    text-align: center;
+    width: 68px;
+    z-index: 999;
+    transition: .3s;
+    -webkit-animation: email-an linear 1s infinite;
+    animation: email-an linear 1s infinite;
+    margin-left: 40px;
+}
+
+.email-bt .text-call {
+    height: 68px;
+    width: 68px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+.email-bt .text-call span {
+    text-align: center;
+    color: #38a3fd;
+    opacity: 0;
+    font-size: 0;
+    position: absolute;
+    right: 8px;
+    top: 22px;
+    line-height: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: opacity .3s linear;
+    font-family: 'montserrat', Arial, Helvetica, sans-serif;
+}
+
+.email-bt .text-call:hover span {
+    opacity: 1;
+    font-size: 10px;
+}
+
+.email-bt:hover i {
+    display: none;
+}
+
+.email-bt:hover {
+    z-index: 1;
+    background: #fff;
+    transition: .3s;
+}
+
+.email-bt:hover i {
+    color: #38a3fd;
+    font-size: 40px;
+    transition: .3s;
+}
+
+.email-bt i {
+    color: #fff;
+    font-size: 29px;
+    transition: .3s;
+    line-height: 66px;
+    margin-right: 4px;
+}
+
+.email-bt i {
+    -webkit-animation: opsimple 3s infinite;
+    animation: opsimple 3s infinite;
+}
+
+@-webkit-keyframes email-an {
+    0% {
+        box-shadow: 0 8px 10px rgba(56,163,253,0.3),0 0 0 0 rgba(56,163,253,0.2),0 0 0 0 rgba(56,163,253,0.2)
+    }
+
+    40% {
+        box-shadow: 0 8px 10px rgba(56,163,253,0.3),0 0 0 15px rgba(56,163,253,0.2),0 0 0 0 rgba(56,163,253,0.2)
+    }
+
+    80% {
+        box-shadow: 0 8px 10px rgba(56,163,253,0.3),0 0 0 30px rgba(56,163,253,0),0 0 0 26.7px rgba(56,163,253,0.067)
+    }
+
+    100% {
+        box-shadow: 0 8px 10px rgba(56,163,253,0.3),0 0 0 30px rgba(56,163,253,0),0 0 0 40px rgba(56,163,253,0.0)
+    }
+}
+
+@keyframes email-an {
+    0% {
+        box-shadow: 0 8px 10px rgba(56,163,253,0.3),0 0 0 0 rgba(56,163,253,0.2),0 0 0 0 rgba(56,163,253,0.2)
+    }
+
+    40% {
+        box-shadow: 0 8px 10px rgba(56,163,253,0.3),0 0 0 15px rgba(56,163,253,0.2),0 0 0 0 rgba(56,163,253,0.2)
+    }
+
+    80% {
+        box-shadow: 0 8px 10px rgba(56,163,253,0.3),0 0 0 30px rgba(56,163,253,0),0 0 0 26.7px rgba(56,163,253,0.067)
+    }
+
+    100% {
+        box-shadow: 0 8px 10px rgba(56,163,253,0.3),0 0 0 30px rgba(56,163,253,0),0 0 0 40px rgba(56,163,253,0.0)
+    }
+}
+
+@keyframes opsimple {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes opsimple {
+    0% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+.kabum {
+    border: 1px solid gray;
+}
+
+.txtLabel {
+    color: black;
+    margin: 5px;
+    font-size: 20px;
+    font-family: 'Century Gothic';
+}
+
+#tbMessage {
+    min-height: 73px;
+    resize: none;
+    max-height: 350px;
+}
+
+.contact i {
+    font-size: 22px;
+}

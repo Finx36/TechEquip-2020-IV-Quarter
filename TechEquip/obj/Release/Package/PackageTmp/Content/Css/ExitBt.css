@@ -1,0 +1,15 @@
+﻿#dkbt4, #dkbt5 {
+    display: none;
+}
+
+@media screen and (max-width: 991px) {
+    #dkbt4 {
+        display: initial;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #dkbt5 {
+        display: initial;
+    }
+}

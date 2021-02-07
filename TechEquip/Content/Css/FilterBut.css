@@ -1,0 +1,25 @@
+﻿.filterbut {
+    margin-top: 10px;
+    position: relative;
+}
+
+#btFiler {
+    border-radius: 10px;
+    height: 46px;
+    width: 46px;
+    position: relative;
+    background-color: Transparent;
+    border-color: Transparent;
+}
+
+.filterbut #ifilter {
+    color: white;
+    font-size: 30px;
+    height: 46px;
+    width: 46px;
+    padding: 9px 12px;
+    transition: 0.3s;
+    position: absolute;
+    background: dodgerblue;
+    border-radius: 10px;
+}
